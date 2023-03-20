@@ -114,3 +114,58 @@ a {
 }
 
 /* Header styles end */
+
+/* Not only styles start */
+
+.not-only__wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 3.125%;
+}
+
+.not-only__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 3.5%;
+}
+
+.not-only__content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 13.6%; /*163px*/
+  padding-bottom: 20.25% /*243px*/;
+}
+
+.not-only__title {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  color: var(--color-light-xl);
+  margin-bottom: 42px;
+}
+
+.not-only__descr {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%; 
+  color: var(--color-dark-s);
+  margin-bottom: 42px;
+}
+
+.not-only__picture {
+  width: 59%;
+  height: auto;
+}
+
+.not-only__button {
+  color: var(--color-dark-3xl);
+  background: var(--color-primary);
+  max-width: 207px;
+  white-space: nowrap;
+} 
+/* Not only styles end */
