@@ -579,13 +579,6 @@ a {
     transition: all 0.5s ease;
   }
 
-  .slider-item:hover {
-    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-    background: var(--color-light-xl);
-    cursor: pointer;
-    transition: all 0.5s ease;
-  }
-
   .slider-item:hover .our-friends__learn-more {
     padding: 15px 45px;
     background: var(--color-primary-light);
@@ -593,12 +586,18 @@ a {
     border: none;
   }
 
+  .slider-item:hover {
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    background: var(--color-light-xl);
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+
   .our-friends__learn-more:hover {
     padding: 15px 45px;
     background: var(--color-primary-light);
     cursor: pointer;
     border: none;
-    transition: all 0.5 ease;
   }
 
   .our-friends__know-rest:hover {
