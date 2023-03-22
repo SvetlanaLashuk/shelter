@@ -55,7 +55,6 @@ a {
 .header__wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  /* padding: 0 2.5rem; */
   padding: 0 3.125%;
 }
 
@@ -132,8 +131,7 @@ a {
 .not-only__wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  /* padding: 0 3.125%; */
-  padding: 0 2.62rem;
+  padding: 0 3.125%;
 }
 
 .not-only__body {
@@ -246,27 +244,27 @@ a {
 
 /* About styles end */
 
-/* Pets styles start */
+/* Our friends styles start */
 
-.pets {
+.our-friends {
   background-color: var(--color-light-l);
   padding: 6.25% 0 7.81% 0;
 }
 
-.pets__wrapper {
+.our-friends__wrapper {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 3.125%;
 }
 
-.pets__content {
+.our-friends__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.pets__title {
+.our-friends__title {
   font-family: 'Georgia';
   font-style: normal;
   font-weight: 400;
@@ -315,7 +313,7 @@ a {
   color: var(--color-dark-l)
 }
 
-.pets__learn-more {
+.our-friends__learn-more {
   border: 2px solid var(--color-primary);
   background-color: var(--color-light-s);
   font-family: 'Georgia';
@@ -333,7 +331,7 @@ a {
   cursor: pointer;
 }
 
-.pets__know-rest {
+.our-friends__know-rest {
   background: var(--color-primary);
   font-family: 'Georgia';
   font-style: normal;
@@ -346,7 +344,7 @@ a {
   color: var(--color-dark-3xl);
 }
 
-/* Pets styles end */
+/* Our friends styles end */
 
 /* Help styles start */
 
@@ -399,20 +397,20 @@ a {
 
 /* Help styles end */
 
-/*Donation styles start */
+/* In addition styles start */
 
-.donation {
+.in-addition {
   background-color: var(--color-light-l);
   padding: 6.25% 0 7.81% 0;
 }
 
-.donation__wrapper {
+.in-addition__wrapper {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 14.29%;
 }
 
-.donation__body {
+.in-addition__body {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -424,12 +422,12 @@ a {
   height: auto;
 }
 
-.donation__content {
+.in-addition_content {
   display: flex;
   flex-direction: column;
 }
 
-.donation__title {
+.in-addition__title {
   font-family: 'Georgia';
   font-style: normal;
   font-weight: 400;
@@ -440,7 +438,7 @@ a {
   margin-bottom: 20px;
 }
 
-.donation__subheading {
+.in-addition__subtitle {
   font-family: 'Georgia';
   font-style: normal;
   font-weight: 400;
@@ -481,7 +479,7 @@ a {
   
 }
 
-.donation__info {
+.in-addition__info {
   font-family: 'Arial';
   font-style: italic;
   font-weight: 400;
@@ -490,7 +488,7 @@ a {
   color: var(--color-dark-m);
 }
 
-/* Donation styles end */
+/* In addition styles end */
 
 /* Footer styles start */
 
@@ -515,7 +513,6 @@ a {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
-  padding-top: 16px;
   margin-bottom: 60px;
 }
 
@@ -552,7 +549,6 @@ a {
   flex-direction: column;
   row-gap: 33px;
   margin-bottom: 60px;
-  padding-top: 16px;
 }
 
 .location-london,
@@ -574,41 +570,47 @@ a {
 
   .menu__link:hover {
     color: var(--color-light-s);
+    transition: all 0.5s ease;
   }
 
   .not-only__button:hover {
     background: var(--color-primary-light);
     cursor: pointer;
+    transition: all 0.5s ease;
   }
 
   .slider-item:hover {
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
     background: var(--color-light-xl);
     cursor: pointer;
+    transition: all 0.5s ease;
   }
 
-  .slider-item:hover .pets__learn-more {
+  .slider-item:hover .our-friends__learn-more {
     padding: 15px 45px;
     background: var(--color-primary-light);
     cursor: pointer;
     border: none;
   }
 
-  .pets__learn-more:hover {
+  .our-friends__learn-more:hover {
     padding: 15px 45px;
     background: var(--color-primary-light);
     cursor: pointer;
     border: none;
+    transition: all 0.5 ease;
   }
 
-  .pets__know-rest:hover {
+  .our-friends__know-rest:hover {
     background: var(--color-primary-light);
     cursor: pointer;
+    transition: all 0.5s ease;
   }
 
   .credit-card:hover {
     background: var(--color-primary-light);
     cursor: pointer;
+    transition: all 0.5s ease;
   }
 
 }
