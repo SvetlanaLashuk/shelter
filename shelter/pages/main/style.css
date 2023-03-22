@@ -492,6 +492,84 @@ a {
 
 /* Donation styles end */
 
+/* Footer styles start */
+
+.footer {
+  padding-top: 40px;
+  background: url(../../assets/images/texture.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20 ;
+}
+
+.footer__wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 3.125%;
+}
+
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  padding-top: 16px;
+  margin-bottom: 60px;
+}
+
+.footer__title {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: var(--color-light-xl);
+}
+
+.footer__mail,
+.footer__phone {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.footer__text {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: var(--color-primary);
+}
+
+.footer__locations {
+  display: flex;
+  flex-direction: column;
+  row-gap: 33px;
+  margin-bottom: 60px;
+  padding-top: 16px;
+}
+
+.location-london,
+.location-boston {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.footer__img {
+  width: 25%;
+  height: auto;
+}
+
+/* Footer styles end */
+
 @media (hover: hover) {
 
   .menu__link:hover {
