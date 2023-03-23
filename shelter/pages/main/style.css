@@ -71,7 +71,13 @@ a {
 }
 
 .header__logo-link {
-  background-color: transparent;
+  transition: 0.5s ease-out;
+}
+
+.header__logo-link:active {
+  filter: contrast(150%);;
+  cursor: pointer;
+  transition: 0.5s ease-out;
 }
 
 .header__title {
@@ -112,6 +118,7 @@ a {
   line-height: 160%;
   color: var(--color-dark-s);
   padding-bottom: 5px;
+  transition: 0.5s ease-out;
 }
 
 .menu__link.active {
@@ -149,7 +156,6 @@ a {
   flex-direction: column;
   padding-top: 13.6%; /*163px*/
   padding-bottom: 20.25% /*243px*/;
-  
 }
 
 .not-only__title {
@@ -182,13 +188,20 @@ a {
   background: var(--color-primary);
   max-width: 207px;
   white-space: nowrap;
+  transition: 0.5s ease-out;
 } 
+
+.not-only__button:active {
+  filter: contrast(120%);;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
 /* Not only styles end */
 
 /* About styles start */
 
 .about {
-  background-color: var(--color-light-xl);
+  background: var(--color-light-xl);
   padding: 6.25% 0 7.81% 0;
 }
 
@@ -247,7 +260,7 @@ a {
 /* Our friends styles start */
 
 .our-friends {
-  background-color: var(--color-light-l);
+  background: var(--color-light-l);
   padding: 6.25% 0 7.81% 0;
 }
 
@@ -262,6 +275,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 60px;
 }
 
 .our-friends__title {
@@ -273,7 +287,12 @@ a {
   letter-spacing: 0.06em;
   color: var(--color-dark-l);
   text-align: center;
-  margin-bottom: 60px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  column-gap: 53px;
 }
 
 .slider-list {
@@ -281,16 +300,22 @@ a {
   justify-content: space-between;
   align-items: center;
   column-gap: 90px;
-  margin-bottom: 60px;
 }
 
 .arrow-btn {
+  width: 3.25rem;
+  height: 3.25rem; 
+  text-align: center;
   border: 2px solid var(--color-primary);
   background-color: transparent;
   border-radius: 100px;
-  padding: 23px 19px;
-  width: 1.5rem;
-  height: 1.5rem;
+  transition: 0.5s ease-out;
+}
+
+.arrow-btn:active {
+  filter: contrast(120%);;
+  cursor: pointer;
+  transition: 0.5s ease-out;
 }
 
 .slider-item {
@@ -300,7 +325,8 @@ a {
   background-color: var(--color-light-s);
   row-gap: 30px;
   border-radius: 9px;
-  overflow: hidden; 
+  overflow: hidden;
+  transition: 0.5s ease-out; 
 }
 
 .name {
@@ -314,6 +340,11 @@ a {
 }
 
 .our-friends__learn-more {
+  width: 11.68rem;
+  height: 3.25rem;
+  max-width: 187px;
+  max-height: 52px;
+  text-align: center;
   border: 2px solid var(--color-primary);
   background-color: var(--color-light-s);
   font-family: 'Georgia';
@@ -322,13 +353,10 @@ a {
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 0.06em;
-  /* max-width: 187px; */
-  max-height: 52px;
-  padding: 13px 43px;
   border-radius: 100px;
   color: var(--color-dark-3xl);
   margin-bottom: 30px;
-  cursor: pointer;
+  transition: 0.5s ease-out;
 }
 
 .our-friends__know-rest {
@@ -342,6 +370,14 @@ a {
   padding: 15px 45px;
   border-radius: 100px;
   color: var(--color-dark-3xl);
+  transition: 0.5s ease-out;
+}
+
+.our-friends__learn-more:active,
+.our-friends__know-rest:active {
+  filter: contrast(120%);;
+  cursor: pointer;
+  transition: 0.5s ease-out;
 }
 
 /* Our friends styles end */
@@ -349,7 +385,7 @@ a {
 /* Help styles start */
 
 .help {
-  background-color: var(--color-light-xl);
+  background: var(--color-light-xl);
   padding: 6.25% 0 7.81% 0;
 }
 
@@ -364,6 +400,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 60px;
 }
 
 .help__title {
@@ -375,7 +412,6 @@ a {
   letter-spacing: 0.06em;
   color: var(--color-dark-l);
   text-align: center;
-  margin-bottom: 60px;
 }
 
 .help__list {
@@ -385,7 +421,6 @@ a {
   align-content: space-between;
   column-gap: 11.6%;
   row-gap: 55px;
-
 }
 
 .help__item {
@@ -393,6 +428,7 @@ a {
   flex-direction: column;
   align-items: center;
   row-gap: 30px;
+  transition: 0.5s ease-out;
 }
 
 /* Help styles end */
@@ -400,7 +436,7 @@ a {
 /* In addition styles start */
 
 .in-addition {
-  background-color: var(--color-light-l);
+  background: var(--color-light-l);
   padding: 6.25% 0 7.81% 0;
 }
 
@@ -418,7 +454,7 @@ a {
 }
 
 .donation__img {
-  width: 55.19%;
+  width: 55.2%;
   height: auto;
 }
 
@@ -459,6 +495,7 @@ a {
   padding: 10px 15px;
   width: 349px;
   margin-bottom: 20px;
+  transition: 0.5s ease-out;
 }
  
 .card-icon::before {
@@ -527,11 +564,13 @@ a {
 }
 
 .footer__mail,
-.footer__phone {
+.footer__phone,
+.footer__location {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   column-gap: 20px;
+  transition: 0.5s ease-out;
 }
 
 .footer__text {
@@ -551,65 +590,100 @@ a {
   margin-bottom: 60px;
 }
 
-.location-london,
-.location-boston {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  column-gap: 20px;
-}
-
 .footer__img {
   width: 25%;
   height: auto;
+}
+
+.email-link,
+.phone-link,
+.map-link {
+  transition: 0.5s ease-out;
+}
+
+.email-link:active .footer__mail,
+.phone-link:active .footer__phone,
+.map-link:active .footer__location {
+  filter: sepia(60%) brightness(1.5);
+  cursor: pointer;
+  transition: 0.5s ease-out;
 }
 
 /* Footer styles end */
 
 @media (hover: hover) {
 
+  .header__logo-link:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+  }
+
   .menu__link:hover {
     color: var(--color-light-s);
-    transition: all 0.5s ease;
+    transition: 0.5s ease-out;
   }
 
   .not-only__button:hover {
     background: var(--color-primary-light);
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: 0.5s ease-out;
   }
 
   .slider-item:hover .our-friends__learn-more {
-    padding: 15px 45px;
+    border: 2px solid var(--color-light-s);
     background: var(--color-primary-light);
     cursor: pointer;
-    border: none;
+    transition: 0.5s ease-out;
   }
 
   .slider-item:hover {
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
     background: var(--color-light-xl);
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: 0.5s ease-out;
   }
 
   .our-friends__learn-more:hover {
-    padding: 15px 45px;
+    border: 2px solid var(--color-primary-light);
     background: var(--color-primary-light);
     cursor: pointer;
-    border: none;
+    transition: 0.5s ease-out;
   }
 
   .our-friends__know-rest:hover {
     background: var(--color-primary-light);
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: 0.5s ease-out;
+  }
+
+  .arrow-btn:hover {
+    border: 2px solid var(--color-primary-light);
+    background: var(--color-primary-light);
+    cursor: pointer;
+    transition: 0.5s ease-out;
+  }
+
+  .help__item:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+    transition: 0.5s ease-out;
   }
 
   .credit-card:hover {
     background: var(--color-primary-light);
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: 0.5s ease-out;
+  }
+
+  .email-link:hover,
+  .phone-link:hover,
+  .map-link:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    cursor: pointer;
+    transition: 0.5s ease-out;
   }
 
 }
