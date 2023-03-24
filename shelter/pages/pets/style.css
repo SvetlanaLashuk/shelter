@@ -236,7 +236,8 @@ a {
   background: var(--color-primary);
 }
 
-.our-friends__btn.active:active {
+.our-friends__btn.active:active,
+.our-friends__btn.btn-current:active {
   filter: contrast(110%);;
   cursor: pointer;
   transition: 0.5s ease-out;
@@ -300,6 +301,7 @@ a {
 }
 
 .footer__locations {
+  padding-top: 16px;
   display: flex;
   flex-direction: column;
   row-gap: 33px;
