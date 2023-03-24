@@ -51,8 +51,18 @@ a {
   justify-content: space-between;
 }
 
+.header__logo-link {
+  transition: 0.5s ease-out;
+}
+
+.header__logo-link:active .header__title{
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
 .header__title {
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -63,7 +73,7 @@ a {
 }
 
 .header__subtitle {
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -81,7 +91,7 @@ a {
 }
 
 .menu__link {
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -115,10 +125,11 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 60px;
 }
 
 .our-friends__title {
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -126,16 +137,13 @@ a {
   letter-spacing: 0.06em;
   color: var(--color-dark-l);
   text-align: center;
-  margin-bottom: 60px;
 }
 
 .cards-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-   grid-gap: 30px 40px;
-  /* column-gap: 40px;
-  row-gap: 30px; */
+  gap: 30px 40px;
 }
 
 .card {
@@ -146,6 +154,7 @@ a {
   row-gap: 30px;
   border-radius: 9px;
   overflow: hidden;
+  transition: 0.5s ease-out; 
 }
 
 .pets__img {
@@ -156,7 +165,7 @@ a {
 }
 
 .name {
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -166,20 +175,72 @@ a {
 }
 
 .our-friends__learn-more {
+  width: 11.68rem;
+  height: 3.25rem;
+  max-width: 187px;
+  max-height: 52px;
+  white-space: nowrap;
+  padding: 13px 43px;
   border: 2px solid var(--color-primary);
   background-color: var(--color-light-s);
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 130%;
   letter-spacing: 0.06em;
-  max-height: 52px;
-  padding: 13px 43px;
   border-radius: 100px;
   color: var(--color-dark-3xl);
   margin-bottom: 30px;
   cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.our-friends__learn-more:active {
+  filter: contrast(120%);;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.our-friends__navigation {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+.our-friends__btn {
+  width: 3.25rem;
+  height: 3.25rem;
+  font-family: 'Georgia', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--color-dark-3xl);
+  border: 2px solid var(--color-primary);
+  background: var(--color-light-l);
+  border-radius: 100px;
+  transition: 0.5s ease-out;
+}
+
+.our-friends__btn.disabled {
+  color: var(--color-dark-s);
+  border: 2px solid var(--color-dark-s);
+  background: transparent;
+}
+
+.our-friends__btn.btn-current {
+  color: var(--color-dark-3xl);
+  border: 2px solid var(--color-primary);
+  background: var(--color-primary);
+}
+
+.our-friends__btn.active:active {
+  filter: contrast(110%);;
+  cursor: pointer;
+  transition: 0.5s ease-out;
 }
 
 /* Our friends styles end */
@@ -211,7 +272,7 @@ a {
 }
 
 .footer__title {
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -221,15 +282,17 @@ a {
 }
 
 .footer__mail,
-.footer__phone {
+.footer__phone,
+.footer__location {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   column-gap: 20px;
+  transition: 0.5s ease-out;
 }
 
 .footer__text {
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -245,48 +308,83 @@ a {
   margin-bottom: 60px;
 }
 
-.location-london,
-.location-boston {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  column-gap: 20px;
-}
-
 .footer__img {
   width: 25%;
   height: auto;
+}
+
+.email-link,
+.phone-link,
+.map-link {
+  transition: 0.5s ease-out;
+}
+
+.email-link:active .footer__mail,
+.phone-link:active .footer__phone,
+.map-link:active .footer__location {
+  filter: sepia(60%) brightness(1.5);
+  cursor: pointer;
+  transition: 0.5s ease-out;
 }
 
 /* Footer styles end */
 
 @media (hover: hover) {
 
+  .header__logo-link:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+  }
+
   .menu__link:hover {
     color: var(--color-dark-3xl);
-    transition: all 0.5s ease;
+    transition: 0.5s ease-out
   }
 
   .card:hover .our-friends__learn-more {
-    padding: 15px 45px;
+    border: 2px solid var(--color-light-s);
     background: var(--color-primary-light);
     cursor: pointer;
-    border: none;
+    transition: 0.5s ease-out;
   }
 
   .card:hover {
     box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
     background: var(--color-light-xl);
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: 0.5s ease-out
   }
 
   .our-friends__learn-more:hover {
-    padding: 15px 45px;
+    border: 2px solid var(--color-primary-light);
     background: var(--color-primary-light);
     cursor: pointer;
-    border: none;
-    transition: all 0.5 ease;
+    transition: 0.5s ease-out
+  }
+
+  .our-friends__btn.active:hover {
+    border: 2px solid var(--color-primary-light);
+    background: var(--color-primary-light);
+    cursor: pointer;
+    transition: 0.5s ease-out;
+  }
+
+  .our-friends__btn.btn-current:hover {
+    border: 2px solid var(--color-primary-light);
+    background: var(--color-primary-light);
+    cursor: pointer;
+    transition: 0.5s ease-out;
+  }
+
+  .email-link:hover,
+  .phone-link:hover,
+  .map-link:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    cursor: pointer;
+    transition: 0.5s ease-out;
   }
 
 }

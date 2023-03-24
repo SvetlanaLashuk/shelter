@@ -32,7 +32,7 @@ a {
 }
 
 .btn-link {
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -74,14 +74,14 @@ a {
   transition: 0.5s ease-out;
 }
 
-.header__logo-link:active {
-  filter: contrast(150%);;
+.header__logo-link:active  .header__title{
+  color: var(--color-dark-m);
   cursor: pointer;
   transition: 0.5s ease-out;
 }
 
 .header__title {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
@@ -92,7 +92,7 @@ a {
 }
 
 .header__subtitle {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 13px;
@@ -111,7 +111,7 @@ a {
 }
 
 .menu__link {
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -159,7 +159,7 @@ a {
 }
 
 .not-only__title {
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 44px;
@@ -169,7 +169,7 @@ a {
 }
 
 .not-only__descr {
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -243,7 +243,7 @@ a {
 }
 
 .about__descr {
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -279,7 +279,7 @@ a {
 }
 
 .our-friends__title {
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -330,7 +330,7 @@ a {
 }
 
 .name {
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -347,7 +347,7 @@ a {
   text-align: center;
   border: 2px solid var(--color-primary);
   background-color: var(--color-light-s);
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -356,12 +356,13 @@ a {
   border-radius: 100px;
   color: var(--color-dark-3xl);
   margin-bottom: 30px;
+  cursor: pointer;
   transition: 0.5s ease-out;
 }
 
 .our-friends__know-rest {
   background: var(--color-primary);
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -404,7 +405,7 @@ a {
 }
 
 .help__title {
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -464,7 +465,7 @@ a {
 }
 
 .in-addition__title {
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -475,7 +476,7 @@ a {
 }
 
 .in-addition__subtitle {
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -506,7 +507,7 @@ a {
 }
 
 .card-number {
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -517,7 +518,7 @@ a {
 }
 
 .in-addition__info {
-  font-family: 'Arial';
+  font-family: 'Arial', sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 12px;
@@ -554,7 +555,7 @@ a {
 }
 
 .footer__title {
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
@@ -574,7 +575,7 @@ a {
 }
 
 .footer__text {
-  font-family: 'Georgia';
+  font-family: 'Georgia', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
