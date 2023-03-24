@@ -23,10 +23,6 @@ html {
   overflow-y: overlay;
 }
 
-body {
-  width: 100%;
-}
-
 a {
   text-decoration: none;
 }
@@ -48,14 +44,10 @@ a {
   background: url(../../assets/images/texture.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
-.header {
-  padding: 30px 0 30px 0;
-}
-
 .header__wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 3.125%;
+  padding: 30px 40px;
 }
 
 .header__body {
@@ -107,7 +99,6 @@ a {
   justify-content: space-between;
   list-style: none;
   column-gap: 35px;
-  /* column-gap: 2.7vw; */
 }
 
 .menu__link {
@@ -131,31 +122,29 @@ a {
 /* Not only styles start */
 
 .not-only {
-  padding-top: 60px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .not-only__wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 3.125%;
+  padding: 60px 40px 0 40px;
 }
 
 .not-only__body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* column-gap: 3.5%; */
-  column-gap: 42px;
-  /* column-gap: 2.62rem; */
+  column-gap: 3.5%;
+  /* column-gap: 42px; */
 }
 
 .not-only__content {
   max-width: 460px;
   display: flex;
   flex-direction: column;
-  padding-top: 13.6%; /*163px*/
-  padding-bottom: 20.25% /*243px*/;
+  padding-top: 13.6%;
+  padding-bottom: 20.25%;
 }
 
 .not-only__title {
@@ -179,7 +168,7 @@ a {
 }
 
 .not-only__picture {
-  width: 58%;
+  width: 60%;
   height: auto;
 }
 
@@ -202,13 +191,12 @@ a {
 
 .about {
   background: var(--color-light-xl);
-  padding: 6.25% 0 7.81% 0;
 }
 
 .about__wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 3.125%;
+  padding: 80px 40px 100px;
 }
 
 .about__body {
@@ -261,13 +249,12 @@ a {
 
 .our-friends {
   background: var(--color-light-l);
-  padding: 6.25% 0 7.81% 0;
 }
 
 .our-friends__wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 3.125%;
+  padding: 80px 40px 100px;
 }
 
 .our-friends__content {
@@ -387,13 +374,12 @@ a {
 
 .help {
   background: var(--color-light-xl);
-  padding: 6.25% 0 7.81% 0;
 }
 
 .help__wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 3.125%;
+  padding: 80px 40px 100px;
 }
 
 .help__content {
@@ -438,13 +424,12 @@ a {
 
 .in-addition {
   background: var(--color-light-l);
-  padding: 6.25% 0 7.81% 0;
 }
 
 .in-addition__wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 14.29%;
+  padding: 80px 182px 100px;
 }
 
 .in-addition__body {
@@ -459,9 +444,10 @@ a {
   height: auto;
 }
 
-.in-addition_content {
+.in-addition__content {
   display: flex;
   flex-direction: column;
+  row-gap: 20px;
 }
 
 .in-addition__title {
@@ -472,7 +458,6 @@ a {
   line-height: 130%;
   letter-spacing: 0.06em;
   color: var(--color-dark-l);
-  margin-bottom: 20px;
 }
 
 .in-addition__subtitle {
@@ -483,7 +468,6 @@ a {
   line-height: 110%; /* 17px */
   letter-spacing: 0.06em;
   color: var(--color-dark-l);
-  margin-bottom: 20px;
 }
 
 .credit-card {
@@ -495,15 +479,14 @@ a {
   border-radius: 9px;
   padding: 10px 15px;
   width: 349px;
-  margin-bottom: 20px;
   transition: 0.5s ease-out;
 }
  
 .card-icon::before {
   content: url(../../assets/icons/credit-card.svg);
   position: absolute;
-  top: 23%; /* 10px */
-  left: 4.3% /* 15px; */
+  top: 10px;
+  left: 15px;
 }
 
 .card-number {
@@ -511,7 +494,7 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 115%; /* 23px */
+  line-height: 115%;
   letter-spacing: 0.06em;
   color: var(--color-dark-l);
   
@@ -522,7 +505,7 @@ a {
   font-style: italic;
   font-weight: 400;
   font-size: 12px;
-  line-height: 150%; /* or 18px */
+  line-height: 150%;
   color: var(--color-dark-m);
 }
 
@@ -531,14 +514,13 @@ a {
 /* Footer styles start */
 
 .footer {
-  padding-top: 40px;
   background: url(../../assets/images/texture.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20 ;
 }
 
 .footer__wrapper {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 3.125%;
+  padding: 40px 40px 0 40px;
 }
 
 .footer__body {
