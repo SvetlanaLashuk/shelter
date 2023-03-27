@@ -131,8 +131,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 3.5%;
-  /* column-gap: 42px; */
+  column-gap: 42px;
 }
 
 .not-only__content {
@@ -401,8 +400,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: space-between;
-  column-gap: 11.6%;
+  column-gap: 120px;
   row-gap: 55px;
 }
 
@@ -432,7 +430,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 3.28%;
+  column-gap: 30px;
 }
 
 .donation__img {
@@ -461,7 +459,7 @@ a {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 110%; /* 17px */
+  line-height: 110%;
   letter-spacing: 0.06em;
   color: var(--color-dark-l);
 }
@@ -521,6 +519,7 @@ a {
 
 .footer__body {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -569,11 +568,6 @@ a {
   margin-bottom: 60px;
 }
 
-.footer__img {
-  width: 25%;
-  height: auto;
-}
-
 .email-link,
 .phone-link,
 .map-link {
@@ -611,7 +605,7 @@ a {
   }
 
   .slider-item:hover .our-friends__learn-more {
-    border: 2px solid var(--color-light-s);
+    border-color: var(--color-light-s);
     background: var(--color-primary-light);
     cursor: pointer;
     transition: 0.5s ease-out;
@@ -625,7 +619,7 @@ a {
   }
 
   .our-friends__learn-more:hover {
-    border: 2px solid var(--color-primary-light);
+    border-color: var(--color-primary-light);
     background: var(--color-primary-light);
     cursor: pointer;
     transition: 0.5s ease-out;
@@ -638,7 +632,7 @@ a {
   }
 
   .arrow-btn:hover {
-    border: 2px solid var(--color-primary-light);
+    border-color: var(--color-primary-light);
     background: var(--color-primary-light);
     cursor: pointer;
     transition: 0.5s ease-out;

@@ -139,9 +139,9 @@ a {
 }
 
 .cards-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px 40px;
 }
 
@@ -154,6 +154,7 @@ a {
   border-radius: 9px;
   overflow: hidden;
   transition: 0.5s ease-out; 
+  max-width: 270px;
 }
 
 .pets__img {
@@ -259,6 +260,7 @@ a {
 
 .footer__body {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -308,11 +310,6 @@ a {
   margin-bottom: 60px;
 }
 
-.footer__img {
-  width: 25%;
-  height: auto;
-}
-
 .email-link,
 .phone-link,
 .map-link {
@@ -344,7 +341,7 @@ a {
   }
 
   .card:hover .our-friends__learn-more {
-    border: 2px solid var(--color-light-s);
+    border-color: var(--color-light-s);
     background: var(--color-primary-light);
     cursor: pointer;
     transition: 0.5s ease-out;
@@ -358,21 +355,21 @@ a {
   }
 
   .our-friends__learn-more:hover {
-    border: 2px solid var(--color-primary-light);
+    border-color: var(--color-primary-light);
     background: var(--color-primary-light);
     cursor: pointer;
     transition: 0.5s ease-out
   }
 
   .our-friends__btn.active:hover {
-    border: 2px solid var(--color-primary-light);
+    border-color: var(--color-primary-light);
     background: var(--color-primary-light);
     cursor: pointer;
     transition: 0.5s ease-out;
   }
 
   .our-friends__btn.btn-current:hover {
-    border: 2px solid var(--color-primary-light);
+    border-color: var(--color-primary-light);
     background: var(--color-primary-light);
     cursor: pointer;
     transition: 0.5s ease-out;
