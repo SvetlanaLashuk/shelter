@@ -115,6 +115,7 @@ a {
 .menu__link.active {
   border-bottom: 3px solid var(--color-primary);
   color: var(--color-light-s);
+  cursor: default;
 }
 
 /* Header styles end */
