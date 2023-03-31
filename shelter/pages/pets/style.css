@@ -428,7 +428,7 @@ a {
     left: 0;
     z-index: 10;
     transform: translateX(-100%);
-    background: #191919cf;
+    background: var(--color-dark-3xl);
     transition: all 0.8s ease;
   }
 }
