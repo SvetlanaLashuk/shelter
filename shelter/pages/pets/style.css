@@ -105,6 +105,7 @@ a {
 .menu__link.active {
   border-bottom: 3px solid var(--color-primary);
   color: var(--color-dark-3xl);
+  cursor: default;
 }
 
 .header__burger {
@@ -284,7 +285,6 @@ a {
 
 .footer__contacts {
   display: flex;
-  /* flex: 1 1 0; */
   flex-direction: column;
   gap: 40px;
 }
@@ -324,7 +324,6 @@ a {
 
 .footer__locations {
   display: flex;
-  /* flex: 1 0 0; */
   flex-direction: column;
   gap: 33px;
 }
@@ -402,12 +401,6 @@ a {
 
   .our-friends__navigation {
     padding-top: 10px;
-  }
-
-  .footer__body {
-    justify-content: center;
-    padding-top: 30px;
-    gap: 60px;
   }
 
   .footer__body {
