@@ -57,7 +57,7 @@ a {
   transition: 0.5s ease-out;
 }
 
-.header__logo-link:active .header__title{
+.header__logo-link:active .header__title {
   color: var(--color-primary);
   cursor: pointer;
   transition: 0.5s ease-out;
@@ -344,7 +344,10 @@ a {
 
 /* Footer styles end */
 
+/* Hover styles start*/
+
 @media (hover: hover) {
+  /* Header styles */
 
   .header__logo-link:hover {
     transform: scale(1.1);
@@ -354,6 +357,8 @@ a {
   .menu__link:hover {
     color: var(--color-dark-3xl);
   }
+
+  /* Our friends styles */
 
   .card:hover .our-friends__learn-more {
     border-color: var(--color-light-s);
@@ -375,20 +380,24 @@ a {
     background: var(--color-primary-light);
   }
 
+  /* Footer styles */
+
   .email-link:hover,
   .phone-link:hover,
   .map-link:hover {
     transform: scale(1.1);
     opacity: 0.9;
   }
-
 }
 
-@media screen and (max-width: 800px) { 
+/* Hover styles end*/
 
+@media screen and (max-width: 800px) { 
   .wrapper {
     padding: 0 30px;
   }
+
+    /* Our friends styles */
 
   .our-friends__content {
     gap: 30px;
@@ -403,6 +412,8 @@ a {
     padding-top: 10px;
   }
 
+  /* Footer styles */
+
   .footer__body {
     justify-content: center;
     padding-top: 30px;
@@ -415,6 +426,7 @@ a {
 }
 
 @media screen and (max-width: 767px) { 
+  /* Header styles */
 
   .header__burger {
     display: block;
@@ -434,10 +446,11 @@ a {
 }
 
 @media screen and (max-width: 462px) { 
-
   .wrapper {
     padding: 0 10px;
   }
+
+  /* Our friends styles */
 
   .our-friends__content {
     gap: 42px;
@@ -462,9 +475,9 @@ a {
     gap: 10px;
   }
 
+  /* Footer styles */
+
   .footer__body {
-    align-items: center;
-    justify-content: center;
     gap: 44px;
   }
 
@@ -474,8 +487,6 @@ a {
   }
 
   .footer__locations {
-    text-align: center;
-    justify-content: center;
     gap: 40px;
   }
 
@@ -484,18 +495,29 @@ a {
     font-size: 25px;
   }
 
+  .locations-title {
+    margin-left: 11px;
+  }
+
   .footer__img {
     max-width: 260px;
   }
 }
 
-@media screen and (max-width: 325px) { 
+@media screen and (max-width: 404px) {
+  /* Footer styles */
+
+  .footer__body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  /* Header styles */
 
   .header__body {
     padding: 30px 10px;
-  }
-
-  .our-friends__title {
-    max-width: 400px;
   }
 }
