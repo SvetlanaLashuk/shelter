@@ -19,8 +19,12 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-y: scroll;
-  overflow-y: overlay;
+  /* overflow-y: scroll;
+  overflow-y: overlay; */
+}
+
+.lock {
+  overflow: hidden;
 }
 
 a {
@@ -133,7 +137,7 @@ a {
   height: 2px;
   background-color: var(--color-primary);
   position: absolute;
-  left: 0;
+  right: 0;
 }
 
 .burger__line_first {
@@ -770,18 +774,43 @@ a {
 
   .header__burger {
     display: block;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    z-index: 10;
+  }
+
+  .header__burger.active {
+    transform: rotate(-90deg);
   }
 
   .header__menu {
-    width: 100%;
+    width: calc(100% - 55px);
     height: 100%;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 10;
-    transform: translateX(-100%);
+    transform: translateX(100%);
     background: var(--color-dark-3xl);
-    transition: all 0.8s ease;
+    /* background: rgba(41, 41, 41, 0.6); */
+    transition: all 0.5s ease;
+  }
+
+  .header__menu.active {
+    transform: translateX(0);
+  }
+
+  .menu-list {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 40px;
+    padding: 248px 39px;
+  }
+
+  .menu__link {
+    font-size: 32px;
+    padding-bottom: 0;
   }
 }
 
@@ -849,10 +878,6 @@ a {
 }
 
 @media screen and (max-width: 404px) {
-  .wrapper {
-    padding: 0 10px;
-  }
-
   /* Not only styles */
 
   .not-only__body {
@@ -977,10 +1002,13 @@ a {
     align-items: center;
     justify-content: center;
   }
-
 }
 
 @media screen and (max-width: 325px) { 
+  .wrapper {
+    padding: 0 10px;
+  }
+
   /* Header styles */
   .header__body {
     padding: 30px 10px;
