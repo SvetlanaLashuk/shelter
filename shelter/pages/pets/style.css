@@ -441,7 +441,7 @@ a {
   }
 
   .header__menu {
-    width: calc(100% - 55px);
+    width: 320px;
     height: 100%;
     position: fixed;
     top: 0;
