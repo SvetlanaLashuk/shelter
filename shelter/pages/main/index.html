@@ -9,6 +9,7 @@
 		<link rel="icon" href="../../assets/icons/favicon-pets.ico">
 	</head>
 	<body>
+    
 		<div class="gradient__wrapper">
 			<header class="header">
 				<div class="wrapper">
@@ -19,27 +20,30 @@
                 <p class="header__subtitle">Shelter for pets in Boston</p>
               </a>
 						</div>
-						<nav class="header__menu menu">
-							<ul class="menu-list">
-								<li class="menu__item">
-									<a href="#" class="menu__link active">About the shelter</a>
-								</li>
-								<li class="menu__item">
-									<a href="../pets/index.html" class="menu__link">Our pets</a>
-								</li>
-								<li class="menu__item">
-									<a href="#help" class="menu__link">Help the shelter</a>
-								</li>
-								<li class="menu__item">
-									<a href="#contacts" class="menu__link">Contacts</a>
-								</li>
-							</ul>
-						</nav>
-            <div class="header__burger burger">
+            <div class="header__nav">
+              <nav class="header__menu">
+                <ul class="menu-list">
+                  <li class="menu__item">
+                    <a href="#" class="menu__link active">About the shelter</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="../pets/index.html" class="menu__link">Our pets</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#help" class="menu__link">Help the shelter</a>
+                  </li>
+                  <li class="menu__item">
+                    <a href="#contacts" class="menu__link">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__burger">
               <span class="burger__line burger__line_first"></span>
               <span class="burger__line burger__line_second"></span>
               <span class="burger__line burger__line_third"></span>
-            </div>
+            
+          </div>
 					</div>
 				</div>
 			</header>
@@ -77,20 +81,20 @@
             <button class="arrow-btn arrow-left">
               <img src="../../assets/icons/arrow-left.svg" alt="arrow left">
             </button>
-            <div class="slider-list">
-              <div class="slider-item">
+            <div class="cards-container">
+              <div class="card">
                 <img src="../../assets/images/pets/katrine.png" alt="Katrine" class="pets__img">
-                <h4 class="slider-item-name name">Katrine</h4>
+                <h4 class="card-name name">Katrine</h4>
                 <button class="our-friends__learn-more">Learn more</button>
               </div>
-              <div class="slider-item">
+              <div class="card">
                 <img src="../../assets/images/pets/jennifer.png" alt="Jennifer" class="pets__img">
-                <h4 class="slider-item-name name">Jennifer</h4>
+                <h4 class="card-name name">Jennifer</h4>
                 <button class="our-friends__learn-more">Learn more</button>
               </div>
-              <div class="slider-item">
+              <div class="card">
                 <img src="../../assets/images/pets/woody.png" alt="Woody" class="pets__img">
-                <h4 class="slider-item-name name">Woody</h4>
+                <h4 class="card-name name">Woody</h4>
                 <button class="our-friends__learn-more">Learn more</button>
               </div>
             </div>
@@ -204,6 +208,22 @@
         </div>
       </div>
 		</footer>
+    <div class="popup">
+      <div class="popup__body">
+        <div class="popup__img"></div>
+        <div class="popup__content">
+          <h3 class="popup__title"></h3>
+          <h4 class="popup__subtitle"></h4>
+          <h5 class="popup__text pet-descr"></h5>
+          <ul class="popup__list pet-descr"></ul>
+        </div>
+        <button class="popup__close-btn"></button>
+      </div>
+    </div>
+    <script src="../../js/burger.js"></script>
+    <script src="../../js/pets.js" ></script>
+    <script src="../../js/popup.js"></script>
+    <script src="../../js/slider.js"></script>
     <script src="./script.js"></script>
 	</body>
 </html>
