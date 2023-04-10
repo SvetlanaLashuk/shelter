@@ -4,8 +4,10 @@ const petC = document.querySelectorAll('.card');
 
 const btnArrowLeft = document.querySelector('.arrow-left');
 const btnArrowRight = document.querySelector('.arrow-right');
+const cardsContainer = document.querySelector('.cards-container');
 
 let prev = undefined;
+let prevMove = undefined;
 let curArr = [];
 
 const getRandomNumber = (min, max) => {
@@ -48,16 +50,22 @@ window.addEventListener('load', () => {
 });
 
 btnArrowRight.addEventListener('click', () => {
+  cardsContainer.classList.add('animation-right');
   doMove('right');
 });
 
 btnArrowLeft.addEventListener('click', () => {
+  cardsContainer.classList.add('animation-left');
   doMove('left');
 });
 
-let prevMove = undefined;
+cardsContainer.addEventListener('animationend', () => {
+  cardsContainer.classList.remove('animation-right');
+  cardsContainer.classList.remove('animation-left');
+});
 
 function doMove(move) {
+  /* Если первый клик */
   if (prev === undefined) {
     prev = curArr;
     let result = []
@@ -69,6 +77,7 @@ function doMove(move) {
     curArr = randomData(result).slice(0,3);
     prevMove = move;
   } else {
+    /* Клик по той же кнопке */
     if (prevMove === move) {
       prev = curArr;
       let result = []
@@ -78,10 +87,10 @@ function doMove(move) {
         }
       }
       curArr = randomData(result).slice(0,3);
-    } else {
+    } else { // Клик по другой кнопке
       let temp = curArr
       curArr = prev;
-      prev =temp;
+      prev = temp;
       prevMove = move;
     }
   }

@@ -311,6 +311,32 @@ ul {
   width: 82.5%;
 }
 
+.cards-container.animation-right {
+  animation: elemRight 1s linear;
+}
+
+.cards-container.animation-left {
+  animation: elemLeft 1s linear;
+}
+
+@keyframes elemRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes elemLeft {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .arrow-btn {
   width: 50px;
   height: 52px; 
