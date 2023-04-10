@@ -1,7 +1,4 @@
-// import { petCards } from "./common.js";
-
 const petC = document.querySelectorAll('.card');
-
 const btnArrowLeft = document.querySelector('.arrow-left');
 const btnArrowRight = document.querySelector('.arrow-right');
 const cardsContainer = document.querySelector('.cards-container');
@@ -28,6 +25,7 @@ const randomData = (data) => {
   return resultRandomData;
 }
 
+/* Заполнение карточек */
 function fillCards(arr) {
   for (let i = 0; i < petC.length; i++) {
     let cardImg = document.querySelectorAll('.pets__img')[i];
@@ -37,6 +35,7 @@ function fillCards(arr) {
   }
 }
 
+/* Генерация и заполнение карточек при загрузке страницы */
 window.addEventListener('load', () => {
   let res = randomData(pets);
   

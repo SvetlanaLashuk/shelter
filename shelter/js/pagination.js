@@ -23,6 +23,7 @@ const randomData = (data) => {
   return resultRandomData;
 }
 
+/* Генерация карточек */
 const getCardsData = () => {
   const randomCards = randomData(pets);
   const result = [];
@@ -41,10 +42,9 @@ const getCardsData = () => {
   return result;
 }
 
-let pageNumber;
-
 const data = getCardsData();
 
+let pageNumber;
 let cardPerPage;
 let currSectionIdx;
 let isLast;
@@ -76,6 +76,7 @@ function disableButtons(btn) {
   btn.classList.remove('active');
 }
 
+/* Первая кнопка */
 const onFirst = () => {
   if (pageNumber === 1) return;
   isLast = false;
@@ -88,6 +89,7 @@ const onFirst = () => {
   disableButtons(btnPrevious);
 };
 
+/* Предыдущая кнопка */
 const onPrev = () => {
   if (pageNumber === 1) return;
   pageNumber--;
@@ -104,6 +106,7 @@ const onPrev = () => {
   fillCards();
 };
 
+/* Следующая кнопка */
 const onNext = () => {
   if (isLast) return;
   if (pageNumber === 1) {
@@ -120,6 +123,7 @@ const onNext = () => {
   fillCards();
 };
 
+/* Последняя кнопка */
 const onLast = () => {
   if (isLast) return;
   isLast = true;

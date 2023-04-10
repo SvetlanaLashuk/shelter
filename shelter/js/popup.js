@@ -1,5 +1,3 @@
-// import { petCards } from "./common.js";
-
 const popup = document.querySelector('.popup');
 const petCards = document.querySelectorAll('.card');
 const popupCloseBtn = document.querySelector('.popup__close-btn');

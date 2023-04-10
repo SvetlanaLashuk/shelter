@@ -619,10 +619,6 @@ ul {
     padding-bottom: 76px;
   }
 
-  /* .card:nth-child(n+7) {
-    display: none;
-  } */
-
   .our-friends__navigation {
     padding-top: 10px;
   }
@@ -732,11 +728,6 @@ ul {
   .cards-container {
     gap: 30px;
   }
-
-  /* .card:nth-child(n+4) {
-    display: none;
-  } */
-
   .our-friends__navigation {
     padding-top: 0;
     gap: 10px;

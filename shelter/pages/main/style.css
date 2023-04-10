@@ -20,8 +20,6 @@
 
 html {
   scroll-behavior: smooth;
-  /* overflow-y: scroll;
-  overflow-y: overlay; */
 }
 
 .lock {
@@ -386,10 +384,6 @@ ul {
 }
 
 .our-friends__learn-more {
-  /* width: 11.68rem;
-  height: 3.25rem; */
-  /* max-width: 187px;
-  max-height: 52px; */
   text-align: center;
   padding: 15px 45px;
   border: 2px solid var(--color-primary);
@@ -1058,7 +1052,6 @@ ul {
   .popup__body {
     --width: 240px;
     --height: 341px;
-    /* gap: 10px; */
   }
 
   .popup__img img {
