@@ -740,6 +740,13 @@ ul {
   transition: 0.5s ease-out;
 }
 
+.popup__close-btn:active,
+.popup__close-btn:focus {
+  filter: contrast(120%);
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
 .popup__close-btn::before {
   content: "";
   position: absolute;
@@ -982,6 +989,15 @@ ul {
     transform: rotate(-90deg);
   }
 
+  .header__nav.active {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: rgba(41, 41, 41, 0.6);
+  }
+
   .header__menu {
     width: 320px;
     height: 100%;
@@ -991,12 +1007,10 @@ ul {
     z-index: 10;
     transform: translateX(100%);
     background: var(--color-dark-3xl);
-    /* background: rgba(41, 41, 41, 0.6); */
     transition: all 0.6s ease;
   }
 
   .header__menu.active {
-    /* background: rgba(41, 41, 41, 0.6); */
     transform: translateX(0);
   }
 

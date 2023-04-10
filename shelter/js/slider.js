@@ -1,9 +1,12 @@
+// import { petCards } from "./common.js";
+
+const petC = document.querySelectorAll('.card');
+
 const btnArrowLeft = document.querySelector('.arrow-left');
 const btnArrowRight = document.querySelector('.arrow-right');
-const cards = document.querySelectorAll('.card');
 
-
-let randomArray = [];
+let prev = undefined;
+let curArr = [];
 
 const getRandomNumber = (min, max) => {
   min = Math.ceil(min);
@@ -11,31 +14,76 @@ const getRandomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// function fillData(card) {
-//   cardImg.src = card.img;
-// }
+const randomData = (data) => {
+  let resultRandomData = [...data];
+  for (let i = petC.length - 1; i >= 0; i--) {
+    let randomNumber = getRandomNumber(0, resultRandomData.length - 1);
+    let temp = resultRandomData[randomNumber];
+    resultRandomData[randomNumber] = resultRandomData[i];
+    resultRandomData[i] = temp;
+  }
+
+  return resultRandomData;
+}
+
+function fillCards(arr) {
+  for (let i = 0; i < petC.length; i++) {
+    let cardImg = document.querySelectorAll('.pets__img')[i];
+    let cardName = document.querySelectorAll('.card-name')[i];
+    cardImg.src = arr[i].img;
+    cardName.textContent = arr[i].name;
+  }
+}
 
 window.addEventListener('load', () => {
-  //let rarr = 
-  //while (cards.length)
-
-
-  for (let i = cards.length - 1; i >= 0; i--) {
-    let randomNumber = getRandomNumber(0, 7);
-    randomArray.push(randomNumber);
+  let res = randomData(pets);
+  
+  for (let i = 0; i < petC.length; i++) {
+    let cardImg = document.querySelectorAll('.pets__img')[i];
+    let cardName = document.querySelectorAll('.card-name')[i];
+    cardImg.src = res[i].img;
+    cardName.textContent = res[i].name;
+    curArr.push(res[i]);
   }
-
-  console.log(randomArray);
-
-  for (let j = 0; j < cards.length; j++) {
-    let cardImg = document.querySelectorAll('.pets__img')[j];
-    let cardName = document.querySelectorAll('.card-name')[j];
-    console.log(j);
-    //for (let i = 0; i < randomArray.length; i++) {
-      cardImg.src = pets[randomArray[j]].img;
-      cardName.textContent = pets[randomArray[j]].name;
-      console.log(pets[randomArray[j]].name);
-    //}
-  }
-
 });
+
+btnArrowRight.addEventListener('click', () => {
+  doMove('right');
+});
+
+btnArrowLeft.addEventListener('click', () => {
+  doMove('left');
+});
+
+let prevMove = undefined;
+
+function doMove(move) {
+  if (prev === undefined) {
+    prev = curArr;
+    let result = []
+    for (let i = 0; i < pets.length; i++){
+      if (curArr.findIndex(x => x === pets[i]) === -1) {
+        result.push(pets[i]);
+      }
+    }
+    curArr = randomData(result).slice(0,3);
+    prevMove = move;
+  } else {
+    if (prevMove === move) {
+      prev = curArr;
+      let result = []
+      for (let i = 0; i < pets.length; i++) {
+        if (curArr.findIndex(x => x === pets[i]) === -1) {
+          result.push(pets[i]);
+        }
+      }
+      curArr = randomData(result).slice(0,3);
+    } else {
+      let temp = curArr
+      curArr = prev;
+      prev =temp;
+      prevMove = move;
+    }
+  }
+  fillCards(curArr);
+}
